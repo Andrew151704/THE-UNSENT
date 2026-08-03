@@ -3,70 +3,76 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta
-name="viewport"
-content="width=device-width,initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<title>THE UNSENT</title>
+    <title>THE UNSENT</title>
 
-<meta
-name="theme-color"
-content="#000000">
+    <meta name="theme-color" content="#000000">
 
-<link
-rel="preconnect"
-href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-<link
-rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-<link
-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
-rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
 
-<link
-rel="stylesheet"
-href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div id="noise"></div>
+    <!-- Background -->
 
-<div id="vignette"></div>
+    <canvas id="bg"></canvas>
 
-<main id="experience">
+    <div id="overlay"></div>
 
-<section id="intro">
+    <div id="noise"></div>
 
-<div id="terminal">
+    <div id="vignette"></div>
 
-<p class="line"></p>
+    <!-- Experience -->
 
-<p class="line"></p>
+    <main id="experience">
 
-<p class="line"></p>
+        <section id="intro">
 
-</div>
+            <div id="terminal">
 
-<div id="continue">
+                <p class="line"></p>
 
-Touch anywhere
+                <p class="line"></p>
 
-</div>
+                <p class="line"></p>
 
-</section>
+            </div>
 
-</main>
+            <div id="continue">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+                Touch Anywhere
 
-<script src="script.js"></script>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Ripple -->
+
+    <div id="ripple"></div>
+
+    <!-- Libraries -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
 
