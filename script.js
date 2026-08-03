@@ -4,7 +4,7 @@ const lines = [
 
 "One unfinished story detected.",
 
-"Initializing experience..."
+"Touch to begin."
 
 ];
 
@@ -51,12 +51,35 @@ clearInterval(interval);
 
 current++;
 
-setTimeout(typeLine,700);
+setTimeout(typeLine,600);
 
 }
 
-},40);
+},35);
 
 }
 
 typeLine();
+
+const ripple =
+document.getElementById("ripple");
+
+window.addEventListener("pointerdown",(e)=>{
+
+ripple.style.left=e.clientX+"px";
+
+ripple.style.top=e.clientY+"px";
+
+gsap.fromTo(ripple,
+{
+opacity:1,
+scale:0
+},
+{
+opacity:0,
+scale:14,
+duration:1,
+ease:"power3.out"
+});
+
+});
